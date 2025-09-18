@@ -1,0 +1,26 @@
+{% extends 'layout.html' %}
+{% block content %}
+<!-- Nav Bar-->
+<div class="topnav">
+  <a class="active" href="/">Home</a>
+  <a href="/all_hairstyles">Hairstyles</a>
+  <a href="/faceshapes">Finder</a>
+</div>
+<!-- Hero Banner -->
+<div class="hero">
+  <h1>Shape Your Look, Grow Your Confidence</h1>
+  <a href="/all_hairstyles" class="btn">Find Your Style</a>
+</div>
+
+<!-- Featured Hairstyles -->
+<div class="hairstyles-preview">
+  {% for hairstyle in hairstyles %}
+  <div class="hairstyle-card">
+    <img src="{{ url_for('static', filename='images/' ~ hairstyle[3]) }}" alt="{{ hairstyle[1] }}">
+    <h3>{{ hairstyle[1] }}</h3>
+    <p>{{ hairstyle[2] }}</p>
+  </div>
+  {% endfor %}
+</div>
+
+{% endblock %}

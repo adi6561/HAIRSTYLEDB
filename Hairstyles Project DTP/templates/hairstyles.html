@@ -1,0 +1,19 @@
+{% extends 'layout.html' %}
+{% block content %}
+<div class="topnav">
+    <a href="/">Home</a>
+    <a class="active" href="/all_hairstyles">Hairstyles</a>
+    <a href="/faceshapes">Finder</a>
+</div>
+<h1>Hairstyle:</h1>
+<h2>{{ hairstyle[1] }}</h2>
+<h1>Length:</h1>
+<h2>{{ hairstyle[2] }}</h2>
+<h1>Hair Type:</h1>
+<h2>{{ hairstyle[3] }}</h2>
+{% if hairstyle[4] %}
+  <img src="{{ url_for('static', filename='images/' + hairstyle[4]) }}">
+{% else %}
+  <p>No image found</p>
+{% endif %}
+{% endblock %}

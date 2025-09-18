@@ -1,0 +1,233 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap');
+
+/**
+GLOBAL STYLES
+**/
+body {
+    background-color: #C6E2E9;
+}
+
+.info-bar {
+  background-color: #f0f0f0;
+  color: #333;
+  font-size: 17px;
+  font-family: "Lexend Deca", sans-serif;
+  padding: 12px 18px;
+  margin: 18px auto 0 auto;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  max-width: 1000px;
+  text-align: center;
+}
+
+h1 {
+    color: #002e4b;
+    font-family: "Lexend Deca" , sans-serif;
+    text-align: center;
+}
+
+h2 {
+    color: #002e4b;
+    font-family: "Lexend Deca" , sans-serif;
+    text-align: center;
+}
+
+
+li {
+    font-size: 20px;
+    color: #002e4b;
+    font-family: "Lexend Deca" , sans-serif;
+    text-align: center;
+}
+
+
+p {
+    color: #002e4b;
+    font-family: "Lexend Deca" , sans-serif;
+    text-align: center;
+}
+
+
+a {
+    color: #002e4b;
+    font-family: "Lexend Deca" , sans-serif;
+    text-align: center;
+}
+
+.topnav {
+    background-color: #4a9ab3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    gap: 0; /* no space between items */
+    border-radius: 30px;
+}
+
+
+.topnav a {
+    display: inline-block;
+    margin: 0;
+    padding: 14px 16px;
+    font-size: 17px;
+    text-decoration: none;
+    color: #000000;
+    background-color: transparent;
+    border-radius: 30px;
+}
+
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: #6cd5ff;
+    color: black;
+    border-radius: 30px;
+  }
+  
+  /* Add a color to the active/current link */
+  .topnav a.active {
+    background-color: #63b0cd;
+    color: rgb(0, 0, 0);
+    border-radius: 30px;
+  }
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 80%; 
+    height: auto; 
+    border-radius: 20px; 
+}
+
+.hairstyle-grid{
+  display:flex;
+  flex-wrap:wrap;
+  gap:20px;
+  justify-content:center;   /* center the row(s) */
+  padding:20px;
+  max-width:1200px;
+  margin:0 auto;
+}
+
+.hairstyle-item{
+  width:350px;               /* fixed card width */
+  text-align:center;
+}
+
+.hairstyle-item img{
+  width:100%;
+  height:350px;
+  object-fit:cover;
+  border-radius:10px;
+}
+  .hairstyle-item img:hover {
+    transform: scale(1.05);
+  }
+  
+  .hairstyle-item p {
+    margin-top: 8px;
+    font-weight: bold;
+    color: #333;
+    text-decoration: none;
+  }
+
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  background: url('/static/images/hero.jpg') no-repeat center center/cover;
+  color: #0d2c40;
+  padding: 80px 20px;
+  border-radius: 12px;
+  margin-bottom: 40px;
+}
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+.hero .btn {
+  background-color: #0d2c40;
+  color: white;
+  padding: 12px 24px;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+/* Hairstyles Preview */
+.hairstyles-preview {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin: 40px 0;
+}
+.hairstyle-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+  padding: 15px;
+  text-align: center;
+  width: 220px;
+}
+.hairstyle-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+.hairstyle-card h3 {
+  margin-top: 12px;
+  font-size: 1.2rem;
+  font-family: "Lexend Deca" , sans-serif;
+
+}
+.hairstyle-card p {
+  color: #555;
+  font-family: "Lexend Deca" , sans-serif;
+}
+
+
+.faceshape-links {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.faceshape-links a {
+  background-color: #4a9ab3;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: bold;
+  transition: background-color 0.2s;
+}
+
+.faceshape-links a:hover {
+  background-color: #6cd5ff;
+  color: black;
+}
+
+.faceshape-images {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 40px;
+  flex-wrap: wrap;
+}
+
+.faceshape-images div {
+  text-align: center;
+}
+
+.faceshape-images img {
+  width: 300px;
+  height: 280px;
+  border-radius: 10px;
+  display: block;
+  margin: 0 auto 10px;
+}

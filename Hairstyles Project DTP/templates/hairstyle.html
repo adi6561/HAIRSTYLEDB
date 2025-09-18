@@ -1,0 +1,15 @@
+{% extends 'layout.html' %}
+{% block content %}
+<div class="topnav">
+    <a href="/">Home</a>
+    <a class="active" href="/all_hairstyles">Hairstyles</a>
+    <a href="/faceshapes">Finder</a>
+  </div>
+<h1>{{hairstyle[1]}}</h1>
+<h2>Face Shape</h2>
+<p>{{hairstyle[2]}}</p>
+<h2>Hair Type</h2>
+<p>{{hairstyle[3]}}</p>
+<h2>Length</h2>
+<p>{{hairstyle[4]}}</p>
+{% endblock %}

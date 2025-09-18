@@ -1,0 +1,21 @@
+{% extends 'layout.html' %}
+{% block content %}
+<div class="topnav">
+  <a href="/">Home</a>
+  <a class="active" href="/all_hairstyles">Hairstyles</a>
+  <a href="/faceshapes">Finder</a>
+</div>
+
+<h1>All Hairstyles</h1>
+
+<div class="hairstyle-grid">
+  {% for h in hairstyles %}
+    <div class="hairstyle-item">
+      <a href="/hairstyle/{{ h[0] }}">
+        <img src="{{ url_for('static', filename='images/' + h[2]) }}" alt="{{ h[1] }}">
+        <p>{{ h[1] }}</p>
+      </a>
+    </div>
+  {% endfor %}
+</div>
+{% endblock %}

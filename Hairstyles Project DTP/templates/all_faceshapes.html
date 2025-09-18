@@ -1,0 +1,46 @@
+{% extends 'layout.html' %}
+{% block content %}
+<div class="topnav">
+  <a href="/">Home</a>
+  <a href="/all_hairstyles">Hairstyles</a>
+  <a class="active" href="/faceshapes">Finder</a>
+</div>
+
+<h1>Choose Your Face Shape</h1>
+
+<div class="faceshape-links">
+  <a href="/faceshape/1">Oval</a>
+  <a href="/faceshape/2">Diamond</a>
+  <a href="/faceshape/3">Rectangle</a>
+  <a href="/faceshape/4">Square</a>
+  <a href="/faceshape/5">Circle</a>
+</div>
+
+<!-- New image section -->
+<div class="faceshape-images">
+  <div>
+    <img src="{{ url_for('static', filename='images/Oval.png') }}" alt="Oval face shape">
+    <p>Oval</p>
+  </div>
+  <div>
+    <img src="{{ url_for('static', filename='images/Diamond.png') }}" alt="Diamond face shape">
+    <p>Diamond</p>
+  </div>
+  <div>
+    <img src="{{ url_for('static', filename='images/Rectangle.png') }}" alt="Rectangle face shape">
+    <p>Rectangle</p>
+  </div>
+  <div>
+    <img src="{{ url_for('static', filename='images/Square.png') }}" alt="Square face shape">
+    <p>Square</p>
+  </div>
+  <div>
+    <img src="{{ url_for('static', filename='images/Round.png') }}" alt="Round face shape">
+    <p>Circle</p>
+  </div>
+  <div class="info-bar">
+    Every face has a shape, and if you know your shape, it may assist you in selecting the appropriate hairstyle. There are main face shapes: oval, round, square, rectangle, circle, and diamond. Each of them has its own characteristics, like a strong jawline, subtle curves, or angular cheekbones. If you know your shape, it will make your choice of styles that suit you easier.
+  </div>
+</div>
+
+{% endblock %}
